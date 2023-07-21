@@ -1,7 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Card from '../components/Card.astro';
+const src = "";
 ---
+
+
 
 <Layout title="Pablo Vazquez" >
 	<main >
@@ -61,50 +66,19 @@ import Header from '../components/Header.astro';
 	<section class="bg-zinc-800" id="skills">
 		<h1 class="text-center text-4xl font-mono text-white">Skills</h1>
 		<div class="flex flex-row flex-wrap justify-center">
-			<div class="w-64 h-64 bg-zinc-700 rounded-xl m-6">
-				<img src="flutterio-icon.svg" alt="" class="ml-14 mr-10 mt-5 w-28">
-				<h1 class="text-center text-4xl font-mono text-white mt-10">Flutter</h1>
-			</div>
-			<div class="w-64 h-64 bg-zinc-700  rounded-xl m-6">
-				<img src="mysql-ar21.svg" alt="" class="ml-5  mt-5 w-56">
-				<h1 class="text-center text-4xl font-mono text-white mt-10">MySql</h1>
-			</div>
-			<div class="w-64 h-64 bg-zinc-700  rounded-xl m-6">
-				<img src="git.svg" alt="" class="ml-14 mr-10 mt-5 w-28">
-				<h1 class="text-center text-4xl font-mono text-white mt-10">Git </h1>
-			</div>
-			<div class="w-64 h-64 bg-zinc-700   rounded-xl m-6">
-				<img src="laravel.svg" alt="" class="ml-20  mt-5 w-28">
-				<h1 class="text-center text-4xl font-mono text-white mt-10">Laravel </h1>
-			</div>
-			<div class="w-64 h-64 bg-zinc-700   rounded-xl m-6">
-				<img src="adonisjs.svg" alt="" class="ml-16 mr-10  mt-5 w-28" >
-				<h1 class="text-center text-4xl font-mono text-white mt-10">Adonis</h1>
-			</div>
-			<div class="w-64 h-64 bg-zinc-700   rounded-xl m-6">
-				<img src="python.svg" alt="" class="ml-16 mr-10  mt-5 w-28">
-				<h1 class="text-center text-4xl font-mono text-white mt-10">Python </h1>
-			</div>
-			<div class="w-64 h-64 bg-zinc-700   rounded-xl m-6">
-				<img src="angular.svg" alt="" class="ml-16 mr-10  mt-5 w-28" >
-				<h1 class="text-center text-4xl font-mono text-white mt-10">Angular </h1>
-			</div>
-			<div class="w-64 h-64 bg-zinc-700   rounded-xl m-6">
-				<img src="vuejs.svg" alt="" class="ml-16 mr-10  mt-5 w-28">
-				<h1 class="text-center text-4xl font-mono text-white mt-10">Vue </h1>
-			</div>
-			<div class="w-64 h-64 bg-zinc-700   rounded-xl m-6">
-				<img src="swift.svg" alt="" class="ml-16 mr-10   mt-5 w-28" >
-				<h1 class="text-center text-4xl font-mono text-white mt-10">Swift </h1>
-			</div>
-			<div class="w-64 h-64 bg-zinc-700   rounded-xl m-6">
-				<img src="firebase.svg" alt="" class="ml-20  mt-5 w-28">
-				<h1 class="text-center text-4xl font-mono text-white mt-10">Firebase </h1>
-			</div>
-			<div class="w-64 h-64 bg-zinc-700   rounded-xl m-6">
-				<img src="tailwindcss.svg" alt="" class="ml-20  mt-5 w-28">
-				<h1 class="text-center text-4xl font-mono text-white mt-10">Tailwind </h1>
-			</div>
+			<Card src="flutterio-icon.svg" style='ml-14 mr-10 mt-5 w-28' title='Flutter'></Card>	
+			<Card src="mysql-ar21.svg" style='ml-5  mt-5 w-56' title='MySql' ></Card>
+			<Card src="git.svg" style='ml-14 mr-10 mt-5 w-28' title='Git'></Card>
+			<Card src="laravel.svg" style='ml-20  mt-5 w-28' title='Laravel'></Card>
+			<Card src="adonisjs.svg" style='ml-16 mr-10  mt-5 w-28' title='Adonis'></Card>
+			<Card src="python.svg" style='ml-16 mr-10  mt-5 w-28' title='Python'></Card>
+			<Card src="vuejs.svg" style='ml-16 mr-10  mt-5 w-28' title='Vue js'></Card>
+			<Card src="angular.svg" style='ml-16 mr-10  mt-5 w-28' title='Angular'></Card>
+			<Card src="swift.svg" style='ml-16 mr-10  mt-5 w-28' title='Swift'></Card>
+		    <Card src="firebase.svg" style='ml-16 mr-10  mt-5 w-28' title='Firebase'></Card>
+			<Card src="tailwindcss.svg" style='ml-16 mr-10  mt-5 w-28' title='Tailwind'></Card>
+
+			
 			
 	</section>
 	<section class="h-100 w-full bg-zinc-800" id="projects">
@@ -253,7 +227,7 @@ import Header from '../components/Header.astro';
 		
 	</section> -->
 
-	<footer ></footer> 
+	<Footer></Footer>
 
 
 

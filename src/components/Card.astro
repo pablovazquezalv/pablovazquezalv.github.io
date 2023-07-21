@@ -1,24 +1,18 @@
 ---
 interface Props {
 	title: string;
-	body: string;
-	href: string;
+	style: string;
+	src: string;
 }
 
-const { href, title, body } = Astro.props;
+const { title,src, style } = Astro.props;
 ---
-
-<li class="link-card">
-	<a href={href}>
-		<h2>
-			{title}
-			<span>&rarr;</span>
-		</h2>
-		<p>
-			{body}
-		</p>
-	</a>
-</li>
+<div class="w-64 h-64 bg-zinc-700 rounded-xl m-6">
+	<img src={src} alt="" class={style}>
+	<h1 class="text-center text-4xl font-mono text-white mt-10">
+		{title}
+	</h1>
+</div>
 <style>
 	
 </style>
