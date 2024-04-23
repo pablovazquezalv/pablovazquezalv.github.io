@@ -1,3 +1,0 @@
-
-Pablo Vazquez Alvarado
-portafolio
